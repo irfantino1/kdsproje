@@ -1,0 +1,176 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url("irfan-arkaplan.jpg");
+
+
+}
+
+*{font-family: system-ui;}
+
+.form-outer {
+    margin: 6% auto;
+    width: 100%;
+    max-width: 850px;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.intro {
+    width: 50%;
+    background-color: #3686bd;
+    height: 550px;
+    float: left;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.content-box {
+    padding: 20px;
+}
+
+.head-1 {
+    font-size: 30px;
+    color: white;
+    text-align: uppercase;
+    font-weight:bold;
+}
+
+.p-1 {
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.log-in {
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #383838;
+    border: none;
+    position: absolute;
+    bottom: 90px;
+}
+
+.form {
+    width: 50%;
+    float: left;
+}
+
+
+.form-in {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.h1 {
+    color: #3686bd;
+}
+
+label{
+    font-weight: 600;
+    color: #5f5f5f;
+
+}
+
+.box-1 {
+    width: 50%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    margin-top: 7px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+input[type="password"] {
+    padding: 15px;
+    margin-top: 7px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+
+input:focus {
+    outline: none;
+    border: 1px solid #3686bd;
+    box-shadow: 2px 2px 2px 2px #e3e4e4;
+}
+
+
+.box-2 {
+    margin-bottom: 20px;
+}
+
+.box-3 {
+    margin-bottom: 20px;
+}
+
+
+
+.checkbox {
+    zoom: 1.5;
+}
+
+.term {
+    color: #3686bd;
+}
+
+.agree{
+    margin-top: 2px;
+    position: relative;
+    margin-left: 4px;
+}
+
+.register {
+    padding: 13px 25px;
+    font-size: 16px;
+    font-weight: 600px;
+    color: white;
+    border: none;
+    background-color: #3686bd;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 250px;
+}
+
+.box-7{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box-8 {
+    margin-bottom: 20px;
+}
+
+.box-9 {
+    margin-bottom: 20px;
+}
+
+
+
+.form .emre {
+    position: block ;
+    width: 100%;
+    padding: 10px 0px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    margin-top: 10px;
+    
+}
+
+.form .emre:focus {
+    outline: none;
+    border: 1px solid #3686bd;
+    box-shadow: 2px 2px 2px 2px #e3e4e4;
+}
+
+.form .pozisyon-ilk {
+    margin-bottom: 15px;
+}

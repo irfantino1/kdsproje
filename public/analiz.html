@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+	<title>AdminHub</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">AdminHub</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="dashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="basvuru.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Başvurular</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="analiz.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Analizler</span>
+				</a>
+			</li>
+			<li>
+				<a href="eleman.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">İstenilen</span>
+				</a>
+			</li>
+		</ul>
+		
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				
+			</form>
+		
+			<a href="#" class="profile">
+				<img src="img/emre_harita.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Dashboard</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Analiz</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<ul class="box-info">
+				<li>
+                    <canvas id="oilChart" width="600" height="400"></canvas>
+				</li>	
+
+				<li style="width: 450; height: 450px;">
+					<div style="width:600px; height:400px ;" id="chart_div"></div>
+					
+			
+				</li>
+			</ul>
+
+
+			
+				
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="script.js"></script>
+	<script src="charts.js"></script>
+ 
+
+</body>
+</html>

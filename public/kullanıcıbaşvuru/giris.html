@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-outer">
+        <div class="intro">
+            <div class="content-box">
+                <p class="head-1">Bilgilendirme</p>
+                <p class="p-1"> Sueno Otelde Görev alabilmek için lütfen cv nizi düzgün doldurunuz. Buna göre iş alımı yapılacaktır.
+                </p>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form-in">
+                <form method="post" onsubmit="return validateForm()" action="/api/basvuru">
+                    <h1>Başvuru Formu</h1>
+                    <div class="pozisyon-ilk">
+                        <label>Pozisyon</label><br/>
+                        <select name="pozisyon" id="pozisyon-1" class="emre">
+                            <option value="1">Garson</option>
+                            <option value="2">Resepsiyon</option>
+                            <option value="3">Komi</option>
+                            <option value="4">Bahçivan</option>
+                        </select>
+
+                    </div>
+
+                    <div class="box-1">
+                        <label>First Name</label><br/>
+                        <input name="isim" type="text" placeholder="Enter your First Name">
+                    </div>
+                    <div class="box-1">
+                        <label>Last Name</label><br/>
+                        <input name="soyisim" type="text" placeholder="Enter your Last Name">
+                    </div>
+                    <div class="box-2">
+                        <label>Cinsiyet</label><br/>
+                        <input name="cinsiyet" type="text" placeholder="Cinsiyetiniz">
+                    </div>
+
+                    <div class="box-3">
+                        <label>Doğum Tarihiniz </label><br/>
+                        <input name="tarih" type="text" placeholder="Tarih">
+                    </div>
+                    
+                    <div class="box-4">
+                        <label>Telefon Numaranız </label><br/>
+                        <input name="telno" type="text" placeholder="555-555-5555">
+                    </div>
+
+                    <div class="box-5">
+                        <p>İngilizce Konuşabiliyor musunz</p>
+                        <input type="radio" id="evet" name="soru" value="evet">
+                        <label for="evet">Evet</label>
+                        <input type="radio" id="hayır" name="soru" value="hayır">
+                        <label for="hayır">Hayır</label>
+
+                    </div>
+
+                    <div class="box-6">
+                        <p>İngilizce Konuşabiliyorsanız Dildeki Seviyeniz</p>
+                        <input type="radio" id="a1" name="seviye" value="1">
+                        <label for="a1">A1</label>
+                        <input type="radio" id="a2" name="seviye" value="2">
+                        <label for="a2">A2</label>
+                        <input type="radio" id="b1" name="seviye" value="3">
+                        <label for="b1">B1</label>
+                        <input type="radio" id="b2" name="seviye" value="4">
+                        <label for="b2">B2</label>
+                        <input type="radio" id="c1" name="seviye" value="5">
+                        <label for="c1">C1</label>
+                        <input type="radio" id="c2" name="seviye" value="6">
+                        <label for="c2">C2</label>
+                    </div>
+
+                    <div class="box-7">
+                        <label>Eğitim</label><br/>
+                        <select name="eğitim" id="pozisyon-1" class="emre">
+                            <option value="1">İlkokul</option>
+                            <option value="2">Ortaokul</option>
+                            <option value="3">Lise</option>
+                            <option value="4">Üniversite</option>
+                        </select>
+                    </div>
+
+                    <div class="box-8">
+                        <label>Tecrübe Yılı </label><br/>
+                        <input name="tecrube" type="text" placeholder="3">
+                    </div>
+
+                    <div class="box-9">
+                        <label>Yemek servisi sırasında müşteri memnuniyetini artırmak için hangi adımları atarsınız? </label><br/>
+                        <textarea name="cevaptext" id="" cols="58" rows="10"></textarea>
+                    </div>
+ 
+                    
+
+                    <input type="checkbox" class="checkbox">
+                    <label class="agree">Verdiğim bilgilerin doğru olduğunu <a href="#" class="term" >kabul ediyorum.</a></label>
+                    <br/><br/><br/>
+                    <a href="./index.html"><input  type="submit" value="Gönder" class="register"></a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var formElements = document.forms[0].elements;
+            for (var i = 0; i < formElements.length; i++) {
+                if (formElements[i].type !== "submit" && formElements[i].type !== "checkbox" &&
+                    formElements[i].type !== "radio" && !formElements[i].value) {
+                    alert("Lütfen formu eksiksiz doldurun.");
+                    return false;
+                }
+            }
+            alert("Form başarıyla gönderildi!");
+            return true;
+            
+        }
+    </script>
+
+</body>
+</html>
